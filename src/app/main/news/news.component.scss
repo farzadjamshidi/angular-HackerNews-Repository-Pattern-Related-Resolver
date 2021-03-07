@@ -1,0 +1,22 @@
+@import '../../../styles.scss';
+
+
+.news{
+
+    .each-news{
+
+        .news-title{
+            color : $news-title;
+        }
+    
+        .details{
+            
+            .scores,
+            .date,
+            .comments{
+                font-size: 13px;
+            }
+        }
+    }
+    
+}

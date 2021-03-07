@@ -1,0 +1,21 @@
+<div class="news">
+    
+    <div *ngFor="let item of items; let index = index" class="each-news">
+        <div>
+            <span class="news-title">
+                {{index+1}}. {{item.title}}
+            </span>
+        </div>
+        <div class="details ml-20">
+            <span class="scores">
+                {{item.score}} score(s) by {{item.by}}
+            </span>
+            <span class="date">
+                {{item.time*1000 | date}}
+            </span>
+            <span class="comments">
+                {{item.kids?.length}} comment(s)
+            </span>
+        </div>
+    </div>
+</div>

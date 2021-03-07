@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.margin-v-auto{
+    margin: auto 0px;
+}
+
+.visibility-hidden{
+    visibility: hidden;
+}
+
+@for $i from 1 to 50 {
+
+    .width-#{$i * 5}{
+        width: #{$i * 5}px;
+    }
+    .p-#{$i * 5}{
+        padding: #{$i * 5}px;
+    }
+    .m-#{$i * 5}{
+        margin: #{$i * 5}px;
+    }
+
+    .mh-#{$i * 5}{
+        margin: 0px #{$i * 5}px;
+    }
+
+    .mv-#{$i * 5}{
+        margin: #{$i * 5}px 0px;
+    }
+
+    .ml-#{$i * 5}{
+        margin-left: #{$i * 5}px;
+    }
+
+    .mr-#{$i * 5}{
+        margin-right: #{$i * 5}px;
+    }
+
+    .mb-#{$i * 5}{
+        margin-bottom: #{$i * 5}px;
+    }
+}
+
+$pallet1-color1 : #FFFFFF;
+$pallet1-color2 : #F8F8F8;
+$pallet1-color3 : #707070;
+$pallet1-color4 : #60666F;
+$pallet1-color5 : #00000029;
+$pallet1-color6 : #9FA2A7;
+$pallet1-color7 : #000000;
+$pallet1-color8 : #585553;
+$pallet1-color9 : #FD8323;
+$pallet1-color10 : #55C22C;
+$pallet1-color11 : #1586FB;
+
+$header-background-color        : $pallet1-color9;
+$header-icons                   : $pallet1-color1;
+$sideBar-border                 : $pallet1-color3;
+$sideBar-menu-border-bottom     : $pallet1-color3;
+$sideBar-menu-border-bottom     : $pallet1-color3;
+$sideBar-menu-deactive          : $pallet1-color6;
+$sideBar-menu-active            : $pallet1-color7;
+$regularInput-border            : $pallet1-color3;
+$regularBtn-border              : $pallet1-color3;
+$regularBtn                     : $pallet1-color1;
+$bg-blue                        : $pallet1-color11;
+$bg-orange                      : $pallet1-color9;
+$bg-green                       : $pallet1-color10;
+$news-title                     : $pallet1-color3;
+
+body{
+    color : $pallet1-color4
+}
+
+.regularInput{
+
+    border: 1px solid $regularInput-border;
+    border-radius: 4px;
+    height: 40px;
+}
+
+.regularBtn{
+    border: 1px solid $regularBtn-border;
+    border-radius: 3px;
+    color: $regularBtn;
+    height: 44px;
+}
+
+.bg-blue{
+    background-color : $bg-blue;
+}
+
+.bg-orange{
+    background-color : $bg-orange;
+}
+
+.bg-green{
+    background-color : $bg-green;
+}
