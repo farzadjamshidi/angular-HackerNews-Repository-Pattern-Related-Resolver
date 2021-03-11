@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CommentComponent } from './main/comment/comment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,

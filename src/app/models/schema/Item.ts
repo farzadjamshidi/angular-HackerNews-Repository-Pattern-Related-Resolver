@@ -9,7 +9,7 @@ export class Item extends baseModel {
     dead? : string;
     parent? : string;
     poll? : string;
-    kids? : string;
+    kids? : number[];
     url? : string;
     score? : string;
     title? : string;
@@ -17,6 +17,6 @@ export class Item extends baseModel {
     descendants? : string
 
     getMockData(){
-        
+
     }
   }

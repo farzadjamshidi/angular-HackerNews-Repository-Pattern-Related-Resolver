@@ -25,7 +25,7 @@ export class NewsComponent implements OnInit, OnDestroy {
 
   }
 
-  getItemDetails(ids: string[]): void {
+  getItemDetails(ids: number[]): void {
 
     let obsevableObjectForForkJoin = {};
 
@@ -34,7 +34,7 @@ export class NewsComponent implements OnInit, OnDestroy {
     });
 
     this.subscriptions.push(forkJoin(obsevableObjectForForkJoin).subscribe(val => {
-        this.items = Object.values(val).map((x: any) => x.data);
+        this.items = Object.values(val).map((x: any) : Item => x.data);
       })
     )
   }

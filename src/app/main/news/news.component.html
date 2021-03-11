@@ -13,7 +13,7 @@
             <span class="date">
                 {{item.time*1000 | date}}
             </span>
-            <span class="comments">
+            <span class="comments" [routerLink]="['/news' , item.id , 'comments']">
                 {{item.kids?.length}} comment(s)
             </span>
         </div>

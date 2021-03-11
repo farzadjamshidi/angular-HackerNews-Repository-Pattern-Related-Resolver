@@ -1,0 +1,18 @@
+<div>
+    
+    <div *ngFor="let item of items; let index = index" class="each-news">
+        <div>
+            <span>
+                {{index+1}}. <span [innerHTML] = "item.text"></span>
+            </span>
+        </div>
+        <div class="ml-20">
+            <span>
+                by {{item.by}}
+            </span>
+            <span>
+                {{item.time*1000 | date}}
+            </span>
+        </div>
+    </div>
+</div>

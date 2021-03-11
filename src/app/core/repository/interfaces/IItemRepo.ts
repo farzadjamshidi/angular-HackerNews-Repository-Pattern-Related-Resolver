@@ -4,6 +4,6 @@ import { IRepo } from './IRepo';
 
 export abstract class IItemRepo<T> extends IRepo<T> {
 
-    get5TopItems : ()  => Observable<BaseResponse>;
+    get5TopItems : ()  => Observable<BaseResponse<number[]>>;
 
 }

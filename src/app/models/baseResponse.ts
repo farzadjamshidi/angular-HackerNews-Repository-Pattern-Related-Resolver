@@ -1,3 +1,3 @@
-export class BaseResponse {
-    data : any
+export class BaseResponse<T> {
+    data : T;
 }
