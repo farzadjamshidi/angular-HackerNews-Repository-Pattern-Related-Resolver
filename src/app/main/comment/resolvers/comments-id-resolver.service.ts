@@ -1,5 +1,5 @@
 import { inject, Inject, Injectable, InjectionToken } from '@angular/core';
-import { Router, ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
+import { ActivatedRouteSnapshot, Resolve, Router, RouterStateSnapshot } from '@angular/router';
 import { EMPTY, Observable } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { NetworkWrapperHelper } from 'src/app/core/helpers/network-wrapper.helper';
@@ -16,16 +16,15 @@ const ITEMREPO_INJECTIONTOKEN = new InjectionToken<IItemRepo<Item>>(
 );
 
 @Injectable({
-  providedIn: 'root',
-
+  providedIn: 'root'
 })
-export class CommentDetailResolverService implements Resolve<number[]> {
+export class CommentsIdResolverService implements Resolve<number[]>{
 
   constructor(
     @Inject(ITEMREPO_INJECTIONTOKEN) private itemRepo: IItemRepo<Item>,
-    private router: Router
+    private router: Router,
   ) { }
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): number[] | Observable<number[]> | Promise<number[]> {
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<number[]> {
 
     const id = route.paramMap.get('id');
 
@@ -41,5 +40,4 @@ export class CommentDetailResolverService implements Resolve<number[]> {
       })
     )
   }
-
 }

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CommentDetailResolverService } from './comment-detail-resolver.service';
+import { CommentsDetailResolverService } from './comments-detail-resolver.service';
 
 describe('CommentDetailResolverService', () => {
-  let service: CommentDetailResolverService;
+  let service: CommentsDetailResolverService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(CommentDetailResolverService);
+    service = TestBed.inject(CommentsDetailResolverService);
   });
 
   it('should be created', () => {
