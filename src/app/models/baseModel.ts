@@ -1,7 +1,7 @@
 export class baseModel {
     id: number;
 
-    getMockData(){
+    static getMockData(){
   
     }
   }

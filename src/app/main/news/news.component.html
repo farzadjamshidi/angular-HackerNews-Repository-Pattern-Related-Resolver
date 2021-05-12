@@ -1,5 +1,5 @@
 <div class="news">
-    
+
     <div *ngFor="let item of items; let index = index" class="each-news">
         <div>
             <span class="news-title">
@@ -13,7 +13,7 @@
             <span class="date">
                 {{item.time*1000 | date}}
             </span>
-            <span class="comments" [routerLink]="['/news' , item.id , 'comments']">
+            <span class="comments" [routerLink]="['/news' , item.id , 'comments']" [state]="{ kids : item.kids }">
                 {{item.kids?.length}} comment(s)
             </span>
         </div>

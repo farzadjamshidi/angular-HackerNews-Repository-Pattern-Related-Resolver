@@ -16,7 +16,7 @@ export class Item extends baseModel {
     parts? : string;
     descendants? : string
 
-    getMockData(){
+    static getMockData(){
 
     }
   }
